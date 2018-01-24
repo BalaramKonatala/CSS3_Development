@@ -4,124 +4,120 @@
     <meta charset="UTF-8">
     <title>CSS 2D Transformation</title>
     <style>
-        button{
-            background-color: green;
+        .transform{
+            background-color: seagreen;
             color: white;
-            cursor: pointer;
-            padding: 14px 16px;
-            width: 150px;
             border: none;
+            padding: 15px 40px;
+            font-size: 18px;
         }
 
         .translate:hover{
             transform: translate(10px,20px);
+            cursor: pointer;
         }
 
         .rotate_clock:hover{
-           transform: rotate(45deg); /* clock wise */
+            transform: rotate(45deg);
+            cursor: pointer;
         }
 
         .rotate_counter:hover{
-            transform: rotate(-45deg); /* anti clock wise */
+            transform: rotate(-45deg);
+            cursor: pointer;
         }
 
         .scale_up:hover{
             transform: scale(2,3);
+            cursor: pointer;
         }
 
         .scale_down:hover{
             transform: scale(0.8,0.8);
+            cursor: pointer;
         }
 
         .skewX_pos:hover{
             transform: skewX(20deg);
+            cursor: pointer;
         }
 
         .skewX_neg:hover{
             transform: skewX(-20deg);
+            cursor: pointer;
         }
 
         .skewY_pos:hover{
             transform: skewY(20deg);
+            cursor: pointer;
         }
 
         .skewY_neg:hover{
             transform: skewY(-20deg);
-        }
-
-        .skew_pos:hover{
-            transform: skew(20deg,20deg);
-        }
-
-        .skew_neg:hover{
-            transform: skew(-20deg,-20deg);
-        }
-
-        .matrix{
-            transform: matrix(1, 2, -1, 1, 80, 80);
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
 
     <h3>translate(10px,20px);</h3>
-    <button class="translate">
+    <button class="transform translate">
         translate()
     </button>
 
     <br><br><hr>
 
     <h3>rotate(45deg );</h3>
-    <button class="rotate_clock">
+    <button class="transform rotate_clock">
         rotate_clock
     </button>
 
     <br><br><hr>
 
     <h3>rotate(-45deg);</h3>
-    <button class="rotate_counter">
+    <button class="transform rotate_counter">
         rotate_counter_clock
     </button>
 
     <br><br><hr>
 
     <h3>scale(2,3);</h3>
-    <button class="scale_up">
+    <button class="transform scale_up">
         scale up
     </button>
 
     <br><br><hr>
 
     <h3>scale(0.8,0.8);</h3>
-    <button class="scale_down">
+    <button class="transform scale_down">
         scale down
     </button>
 
     <br><br><hr>
 
     <h3>skewX(20deg);</h3>
-    <button class="skewX_pos">
+    <button class="transform skewX_pos">
         skewX Pos
     </button>
 
     <br><br><hr>
 
     <h3>skewX(-20deg);</h3>
-    <button class="skewX_neg">
+    <button class="transform skewX_neg">
         skewX Neg
     </button>
 
     <br><br><hr>
 
     <h3>skewY(20deg);</h3>
-    <button class="skewY_pos">
+    <button class="transform skewY_pos">
         skewY Pos
     </button>
 
     <br><br><hr>
 
     <h3>skewY(-20deg);</h3>
-    <button class="skewY_neg">
+    <button class="transform skewY_neg">
         skewY Neg
     </button>
 
