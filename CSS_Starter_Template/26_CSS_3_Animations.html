@@ -3,6 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <title>CSS3 Animation</title>
+    <style>
+        .simple{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            animation-name: simple;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes simple {
+            from{
+                background-color: red;
+            }
+            to{
+                background-color: yellow;
+            }
+        }
+
+        .percentage{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            animation-name: percentage;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes percentage {
+            0%{
+                background-color: red;
+            }
+            25%{
+                background-color: yellow;
+            }
+            50%{
+                background-color: green;
+            }
+            75%{
+                background-color: black;
+            }
+            100%{
+                background-color: teal;
+            }
+        }
+
+
+        .news{
+            background-color: orange;
+            color: white;
+            font-size: 35px;
+            animation-name: news;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes news {
+            0%{
+                background-color: orange;
+            }
+            25%{
+                background-color: orangered;
+            }
+            50%{
+                background-color: orange;
+            }
+            75%{
+                background-color: orangered;
+            }
+            100%{
+                background-color: orange;
+            }
+        }
+
+
+        .news p{
+            animation-name: flash-news;
+            animation-duration: 18s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes flash-news {
+            0%{
+                transform: translateX(100%);
+            }
+            100%{
+                transform: translateX(-100%);
+            }
+        }
+
+
+        .animate{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-bottom: 400px;
+            animation-name: animate;
+            animation-duration: 4s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            position: relative; /* mandatory */
+        }
+
+        @keyframes animate {
+            0%{
+                background-color: red;
+                top: 0;
+                left: 0;
+                border-radius: 10%;
+                box-shadow: 7px 7px 7px yellow;
+                transform: rotate(90deg);
+            }
+            25%{
+                background-color: yellow;
+                top: 0;
+                left: 200px;
+                border-radius: 20%;
+                box-shadow: 7px 7px 7px green;
+                transform: rotate(180deg);
+            }
+            50%{
+                background-color: green;
+                top: 200px;
+                left: 200px;
+                border-radius: 30%;
+                box-shadow: 7px 7px 7px blue;
+                transform: rotate(270deg);
+            }
+            75%{
+                background-color: blue;
+                top: 200px;
+                left:0;
+                border-radius: 40%;
+                box-shadow: 7px 7px 7px black;
+                transform: rotate(360deg);
+            }
+            100%{
+                background-color: black;
+                top: 0;
+                left: 0;
+                border-radius: 50%;
+                box-shadow: 7px 7px 7px red;
+                transform: rotate(450deg);
+            }
+        }
+    </style>
     
 </head>
 <body>
@@ -25,7 +174,7 @@
 
     <h3>News</h3>
     <div class="news">
-        <p>Latest News: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, voluptatibus?</p>
+        <p>Latest News: Indian-made Iphones are available from Feb-2018</p>
     </div>
 
     <br><br><hr>
@@ -33,6 +182,7 @@
     <div class="animate">
 
     </div>
+
     <br><br><hr>
     <br><br><hr>
 
