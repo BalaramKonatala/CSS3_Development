@@ -151,6 +151,46 @@
                 transform: rotate(450deg);
             }
         }
+
+
+        .task{
+            width: 100px;
+            height: 100px;
+            background-image: url("img/gallery2.jpeg");
+            background-attachment: fixed;
+            background-position: center;
+            border-radius: 50%;
+            margin-bottom: 400px;
+            animation-name: task;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            position: relative;
+
+        }
+
+        @keyframes task {
+            0%{
+                top:0;
+                left: 0;
+            }
+            25%{
+                top: 200px;
+                left: 200px;
+            }
+            50%{
+                top: 0;
+                left: 400px;
+            }
+            75%{
+                top:200px;
+                left: 600px;
+            }
+            100%{
+                top:0;
+                left: 800px;
+            }
+        }
     </style>
     
 </head>
@@ -184,6 +224,10 @@
     </div>
 
     <br><br><hr>
+
+    <div class="task">
+
+    </div>
     <br><br><hr>
 
 </body>
