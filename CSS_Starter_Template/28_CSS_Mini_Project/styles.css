@@ -1,1 +1,88 @@
 
+/* ------- Main Header --------- */
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-header{
+    background-image: url("images/technology.JPG");
+    background-size: cover;
+    color: white;
+    padding: 20px;
+    font-size: 18px;
+    text-align: right;
+}
+
+/* -------- Main Navigation ---------- */
+
+.main-nav{
+    background-color: #333333;
+}
+
+.main-nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.main-nav ul li{
+    float: left;
+}
+
+.main-nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 14px 20px;
+    display: inline-block;
+}
+
+.main-nav ul li a:hover{
+    background-color: #778166;
+    border-radius: 5px;
+}
+
+.main-nav ul li a.active{
+    background-color: #517925;
+    border-radius: 5px;
+}
+
+/* ---------- Latest News ------- */
+.latest-news{
+    background-color:#517925;
+    color: white;
+    margin-top: 5px;
+    animation-name: latest-news;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes latest-news {
+    0% , 50% , 100%{
+        background-color: #2c8d3a;
+    }
+    25% , 75%{
+        background-color: #517925;
+    }
+}
+
+.latest-news p{
+    font-size: 30px;
+    margin-top: 0;
+    padding: 5px;
+    animation-name: flash-news;
+    animation-duration: 14s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes flash-news {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
