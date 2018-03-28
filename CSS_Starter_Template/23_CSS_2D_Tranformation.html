@@ -4,57 +4,64 @@
     <meta charset="UTF-8">
     <title>CSS 2D Transformation</title>
     <style>
-        .transform{
-            background-color: seagreen;
+        button{
+            background-color: purple;
             color: white;
             border: none;
-            padding: 15px 40px;
-            font-size: 18px;
+            font-size: 25px;
+            padding: 10px 25px;
         }
 
         .translate:hover{
             transform: translate(10px,20px);
-            cursor: pointer;
         }
 
         .rotate_clock:hover{
             transform: rotate(45deg);
-            cursor: pointer;
         }
 
         .rotate_counter:hover{
             transform: rotate(-45deg);
-            cursor: pointer;
         }
 
         .scale_up:hover{
             transform: scale(2,3);
-            cursor: pointer;
         }
 
         .scale_down:hover{
-            transform: scale(0.8,0.8);
-            cursor: pointer;
+            transform: scale(0.5,0.5);
         }
 
         .skewX_pos:hover{
             transform: skewX(20deg);
-            cursor: pointer;
         }
 
         .skewX_neg:hover{
             transform: skewX(-20deg);
-            cursor: pointer;
         }
 
         .skewY_pos:hover{
             transform: skewY(20deg);
-            cursor: pointer;
         }
 
         .skewY_neg:hover{
             transform: skewY(-20deg);
-            cursor: pointer;
+        }
+
+        .skew_pos:hover{
+            transform: skew(20deg,20deg);
+        }
+
+        .skew_neg:hover{
+            transform: skew(-20deg,-20deg);
+        }
+
+        .matrix:hover{
+            transform: matrix(1, 2, -1, 1, 80, 80);
+        }
+
+        .matrix{
+            margin-bottom: 200px;
         }
     </style>
 </head>
