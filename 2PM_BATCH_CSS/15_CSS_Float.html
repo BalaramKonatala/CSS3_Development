@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Float</title>
+    <style>
+        .left{
+            border: 2px solid forestgreen;
+            background-color: whitesmoke;
+            padding: 10px;
+            width: 200px;
+            float: left;
+        }
+
+        .right{
+            border: 2px solid forestgreen;
+            background-color: whitesmoke;
+            padding: 10px;
+            width: 200px;
+            float:right;
+        }
+
+        .clear{
+            clear: both; /* to clear the float effect */
+        }
+
+        h2{
+            background-color: forestgreen;
+            color: white;
+            text-align: center;
+            padding: 5px;
+        }
+
+        #news{
+            border: 2px solid black;
+            padding: 10px;
+            overflow: auto;
+        }
+        #news img{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="left">
+        <h1>Float Left</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, sint!</p>
+    </div>
+
+    <div class="right">
+        <h1>Float Right</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, sint!</p>
+    </div>
+
+    <div class="clear">
+        <h2>clear me</h2>
+    </div>
+
+    <div id="news">
+        <img src="img/gallery2.jpeg" width="200" height="150">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid autem debitis earum est excepturi mollitia nesciunt officia tempore! Aut eaque eligendi harum iure placeat quos repellat saepe sed similique vitae. Adipisci autem explicabo in iure labore modi nemo nisi recusandae. A aperiam architecto, beatae cum dignissimos doloremque, exercitationem explicabo fugit laboriosam laudantium nesciunt, officiis quidem unde velit voluptatum! Animi commodi, consectetur cum deleniti deserunt doloribus earum ex, illo modi nisi odio omnis, praesentium quam repellendus sunt tempora vel. Necessitatibus.</p>
+    </div>
+
+</body>
+</html>
