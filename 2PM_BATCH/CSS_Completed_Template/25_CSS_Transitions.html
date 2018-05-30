@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 3 Transitions</title>
+    <style>
+        body{
+            font-family: "Comic Sans MS", sans-serif;
+        }
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            border-radius: 10px;
+        }
+
+        .t_width{
+            transition: width 2s;
+        }
+
+        .t_width:hover{
+            width: 200px;
+        }
+
+        .t_height{
+            transition: height 2s;
+        }
+
+        .t_height:hover{
+            height: 200px;
+        }
+
+        .t_both{
+            transition: all 2s;
+        }
+
+        .t_both:hover{
+            width: 200px;
+            height: 200px;
+        }
+
+        .t_rotate{
+            transition: all 2s;
+        }
+
+        .t_rotate:hover{
+            width: 200px;
+            transform: rotate(180deg);
+        }
+
+        .t_timing{
+            transition: all 2s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 2s;
+        }
+
+        .t_timing:hover{
+            width: 400px;
+        }
+
+        /* Zoom Effect */
+
+        .zoom{
+            width: 500px;
+            height: auto;
+            background-color: white;
+            overflow: hidden;
+        }
+        .zoom img{
+            max-width: 100%;
+            max-height: 100%;
+            transition: all 1s;
+            transition-timing-function: linear;
+        }
+        .zoom:hover img{
+            transform: scale(1.2,1.2);
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Transition Width -->
+    <h3>Transition Width</h3>
+    <div class="t_width"></div>
+
+    <!-- Transition Height -->
+    <h3>Transition Height</h3>
+    <div class="t_height"></div>
+
+    <!-- Transition Both -->
+    <h3>Transition Both</h3>
+    <div class="t_both"></div>
+
+    <!-- Transition Rotate -->
+    <h3>Transition Rotate</h3>
+    <div class="t_rotate"></div>
+
+    <!-- Transition timing -->
+    <h3>Transition Timing</h3>
+    <div class="t_timing"></div>
+
+    <!-- Zoom Effect -->
+    <h3>Zoom Effect</h3>
+    <div class="zoom">
+        <img src="img/gallery2.jpeg">
+    </div>
+
+</body>
+</html>
